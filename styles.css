@@ -1,0 +1,157 @@
+/* =============================================
+   se-login-signup — styles.css
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* ---------- Reset ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Base ---------- */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+/* ---------- Card ---------- */
+.card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Heading ---------- */
+.card-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #1a1a1a;
+}
+
+.card-subtitle {
+  font-size: 0.875rem;
+  color: #777;
+  margin-bottom: 1.75rem;
+}
+
+/* ---------- Form ---------- */
+.form-group {
+  margin-bottom: 1.1rem;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.4rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  background: #fafafa;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: #bbb;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #4f7ef7;
+  box-shadow: 0 0 0 3px rgba(79, 126, 247, 0.15);
+  background: #fff;
+}
+
+/* ---------- Name row (signup only) ---------- */
+.name-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+}
+
+/* ---------- Divider ---------- */
+.divider {
+  height: 1px;
+  background: #e8e8e8;
+  margin: 1.5rem 0 1rem;
+}
+
+/* ---------- Button ---------- */
+.btn-submit {
+  width: 100%;
+  padding: 0.72rem;
+  background: #4f7ef7;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-submit:hover {
+  background: #3a68e0;
+}
+
+.btn-submit:active {
+  background: #2f58cc;
+}
+
+/* ---------- Footer link ---------- */
+.card-footer {
+  margin-top: 1.4rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.card-footer a {
+  color: #4f7ef7;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.card-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  .card {
+    padding: 2rem 1.25rem;
+  }
+
+  .name-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
